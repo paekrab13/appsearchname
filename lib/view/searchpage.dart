@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 
+import '../model/list_info.dart';
 import '../model/name_model.dart';
 
 class SearchPage extends StatefulWidget {
@@ -11,18 +12,6 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
-  // ignore: non_constant_identifier_names
-  static List<NameModel> search_name_list = [
-    NameModel("kittinan", "thaimnarong", 25),
-    NameModel("สมชาย", "ใจดี", 40),
-    NameModel("สมหวัง", "ทำบุญ", 42),
-    NameModel("suchai", "pongjai", 22),
-    NameModel("หวังดี", "จากใจ", 50),
-    NameModel("robert", "william", 32),
-    NameModel("messi", "leonado", 37),
-    NameModel("lebron", "jame", 38),
-    NameModel("steph", "curry", 35),
-  ];
   // ignore: non_constant_identifier_names
   List<NameModel> display_list = List.from(search_name_list);
   void updateList(String value) {
